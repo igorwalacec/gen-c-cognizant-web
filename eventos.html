@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">  
+  <title>Eventos</title>
+</head>
+<body>
+  <label for="text">Texto:</label>
+  <input name="text" id="text" type="text" />
+  <br/>
+  <label for="date">Data:</label>
+  <input name="date" id="date" type="date" />
+  <br/>
+  <label for="email">E-mail:</label>
+  <input name="email" id="email" type="email"/>
+  <br/>
+  <label for="password">Senha:</label>
+  <input name="password" id="password" type="password" />
+  <br/>
+  <label for="number">Número:</label>
+  <input name="number" id="number" type="number" />
+
+  <button id="btn_text">
+    Obter Texto
+  </button>
+
+  <script>
+    document.getElementById('btn_text')
+    .addEventListener('click',function(){
+      alert(document.getElementById('text').value);
+    });
+  </script>
+</body>
+</html>
